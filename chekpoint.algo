@@ -1,0 +1,15 @@
+PROCEDURE Insert_sort(var arr:array of integer; n:integer)
+VAR
+ i,j:integer;
+
+BEGIN
+
+FOR i FROM 1 to n-1 DO
+  j:=i-1;
+  WHILE (j>=0 and arr[j]>arr[i]) DO
+    arr[j]:=arr[j+1];
+    j:=j-1;
+  END_WHILE
+END_FOR
+
+END
